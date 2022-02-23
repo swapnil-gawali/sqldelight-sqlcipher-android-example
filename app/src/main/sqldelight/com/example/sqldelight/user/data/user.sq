@@ -1,0 +1,24 @@
+CREATE TABLE user (
+id INTEGER PRIMARY KEY,
+name TEXT NOT NULL
+);
+
+CREATE TABLE hello(
+id INTEGER PRIMARY KEY,
+label TEXT NOT NULL
+);
+
+INSERT INTO user(id, name)
+VALUES (1, "User 1"),
+(2, "User 2");
+
+selectAll:
+SELECT *
+FROM user;
+
+selectById:
+SELECT *
+FROM user
+WHERE id = ?;
+
+
